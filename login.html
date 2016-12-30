@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-signin-client_id"
+          content="789232572770-d7fhm6hlcfo8dcdab9essov5i02phob8.apps.googleusercontent.com">
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<div class="container">
+    <div class="login">
+        <div>Welcome to My Search Tool</div>
+        <div class="g-signin2" id="googleLogin" data-onsuccess="onSignIn" data-theme="dark">
+        </div>
+    </div>
+</div>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script>
+    function onSignIn(googleUser) {
+        function makeCookie(id){
+            document.cookie = "googleId="+id;
+        }
+        var profile = googleUser.getBasicProfile(),
+            id = profile.getId();
+        makeCookie(id);
+        window.location.href="index.html";
+    }
+</script>
+</body>
+</html>

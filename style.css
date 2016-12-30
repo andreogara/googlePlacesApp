@@ -1,0 +1,191 @@
+#map {
+    height: 100%;
+    border-radius: 10px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #444444;
+}
+
+#map-container{
+    height: 600px;
+    width: 800px;
+    position: relative;
+    float: left;
+}
+.controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+#txt_search {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 300px;
+}
+
+
+
+#btn_search, #btn_logout{
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,.3);
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 5px;
+    width: 60px;
+    height: 32px;
+    transition: all ease 0.3s;
+}
+
+#btn_logout{
+    width: 60px;
+    height: 30px;
+    background: #cb8969;
+}
+
+#btn_txt_search, #btn_txt_logout{
+    color: rgb(25,25,25);
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 16px;
+    margin: 3px auto;
+}
+
+#btn_search:hover, #btn_logout:hover{
+    background-color: #cbcbca;
+}
+
+#btn_search:hover:active, #btn_logout:hover:active{
+    box-shadow: 0 3px 0 #515150;
+}
+
+#txt_search:focus {
+    border-color: #4d90fe;
+}
+
+.txt-container {
+    font-family: Roboto,Arial,sans-serif;
+}
+
+#right-panel {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    height: 600px;
+    width: 250px;
+    padding: 5px;
+    background: #fff;
+    float: left;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+h2 {
+    font-size: 22px;
+    margin: 0 0 5px 0;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 560px;
+    width: 240px;
+    overflow-y: scroll;
+}
+
+li {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+li:nth-child(odd) {
+    background-color: #fcfcfc;
+}
+
+#more {
+    position: absolute;
+    bottom: 1px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#infowindow-content {
+    position: relative;
+    border-radius: 10px;
+    display: none;
+}
+
+#map #infowindow-content {
+    display: inline;
+}
+
+#infowindow-content #place-name {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #00b3ee;
+    margin: 0 auto;
+}
+
+#place-address{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.container{
+    width: 1100px;
+    height: 620px;
+    margin: 15px  auto;
+}
+
+.row{
+    position: relative;
+    margin: 100px auto;
+    left: 30%;
+}
+
+h4{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.login{
+    color: white;
+    font-size: 26px;
+    position: absolute;
+    margin: 100px auto;
+    left: 40%;
+    text-align: center;
+    height: 100px;
+    width: 400px;
+}
+
+#googleLogin{
+    left: 30%;
+    position: absolute;
+    margin-top: 10px;
+}
+
+
+
